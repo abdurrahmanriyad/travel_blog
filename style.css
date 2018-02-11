@@ -1,0 +1,471 @@
+/*=================================================================
+
+Author: Abdur Rahman
+Websiter: http://abdur.me
+Description: One Page HTML
+Version: 1.0
+
+--------------------------------------------------------------------
+
+CSS INDEX
+=========
+
+    1.  Base Css
+    2.  content-area css
+        2.1. header css
+        2.2. featured area css
+        2.3. about css
+        2.4. editor's pick css
+        2.5. mountain area css
+        2.6. subscription area css
+        2.7. footer area css
+
+==============================================*/
+
+
+/* ==== Base CSS ==== */
+html, body{
+    height: 100%;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.dark-bg{
+    background: #222222;
+}
+.section-pad{
+    padding:80px 0;
+}
+.section-pad-big{
+    padding: 80px 0;
+}
+.section-pad-top{
+    padding-top: 80px;
+}
+.title-group h3 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.title-group .desc {
+    color: #fff;
+    font-weight: bold;
+}
+.btn-round {
+    background: #ffe251;
+    color: #444;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.btn-round:hover{
+    color: #222;
+}
+.body-side-spacing{
+    padding: 0 20px;
+}
+/* ==== base css ==== */
+
+
+/* ==== content area css ==== */
+/* ============================================
+              1.Start Header CSS
+===============================================*/
+.header-slider .slider-item {
+    position: relative;
+    min-height: 100vh;
+}
+.header-slider .slider-item .slider-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header-area{
+    position: relative;
+}
+.header-slider{
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+.header-content-area {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: none;
+    /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(34, 34, 34,0)), to(rgba(34, 34, 34,1)));
+    background: -webkit-linear-gradient(top, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: -o-linear-gradient(top, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: linear-gradient(to bottom, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+}
+.logo-area {
+    height: 70px;
+    background: #ffe251;
+    padding-left: 40px;
+}
+.logo-area .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.top-bar-area .links {
+    list-style-type: none;
+    padding-right: 40px;
+}
+.top-bar-area .links li {
+    display: inline;
+}
+.top-bar-area .links li:first-child a {
+    padding-right: 30px;
+    margin-right: 20px;
+    border-right: 2px solid #ccc;
+}
+.top-bar-area .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.menu-bars{
+    display: none;
+}
+.side_menu {
+    background: rgba(34, 34, 34,0.5);
+    /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(34, 34, 34,0.6)), to(rgba(34, 34, 34,1)));
+    background: -webkit-linear-gradient(top, rgba(34, 34, 34,0.6) 40%, rgba(34, 34, 34,1));
+    background: -o-linear-gradient(top, rgba(34, 34, 34,0.6) 40%, rgba(34, 34, 34,1));
+    background: linear-gradient(to bottom, rgba(34, 34, 34,0.6) 40%, rgba(34, 34, 34,1));
+    height: calc(100vh - 70px);
+}
+.side_menu ul{
+    list-style-type: none;
+}
+.side_menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 27px;
+    color: #aaa;
+    font-weight: bold;
+}
+.side_menu ul li.active {
+    position: relative;
+}
+.side_menu ul li.active::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #999;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.side_menu ul li.active a {
+    color: #fff;
+    position: relative;
+}
+.site-intro {
+    max-width: 400px;
+    margin-left: 80px;
+}
+.site-intro .title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.site-intro .title, .site-intro .desc{
+    color: #ddd;
+}
+.site-intro .action-btn {
+    margin-top: 22px;
+    background: #ffe251;
+}
+/* ============================================
+               End Header CSS
+===============================================*/
+
+
+/* ============================================
+             2.Start Featured area CSS
+===============================================*/
+.featured-area .view-all {
+    display: block;
+    margin-top: 93px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+.featured-area .view-all::before {
+    content: "";
+    height: 2px;
+    width: 40%;
+    background: #ccc;
+    position: absolute;
+    z-index: 999;
+    display: block;
+    top: 12px;
+    right: 72px;
+}
+.featured-item {
+    padding: 0 30px;
+}
+.featured-item figcaption {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.featured-item .country {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 13px;
+}
+.featured-item .desc {
+    color: #fff;
+    margin-top: 12px;
+    font-weight: 300;
+}
+.featured-item .read-more {
+    margin-top: 26px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffe251;
+}
+.featured-content {
+    padding: 76px 26px 0 26px;
+}
+.about-area .title {
+    color: #fff;
+    font-weight: bold;
+}
+/* ============================================
+             2.End Featured area CSS
+===============================================*/
+
+
+/* ============================================
+             3.Start About CSS
+===============================================*/
+.about-content{
+    padding: 76px;
+}
+.about-area blockquote {
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+    margin: 40px 0;
+}
+.about-area .desc {
+    color: #fff;
+}
+/* ============================================
+             3.End About CSS
+===============================================*/
+
+
+/* ============================================
+             4.Start Editor's pick area CSS
+===============================================*/
+.editor-pick-slider .slider-item {
+    padding: 0 56px;
+    outline: 0;
+}
+.editor-pick-slider img.mb{
+    margin-bottom: 10px;
+}
+.editor-pick-slider .slick-prev {
+    position: absolute;
+    top: -50px;
+    left: 55px;
+    background: #fff;
+    color: #000;
+}
+.editor-pick-slider .slick-next {
+    position: absolute;
+    top: -50px;
+    left: 105px;
+    background: #fff;
+    color: #000;
+}
+.editor-pick-slider .slick-prev::before {
+    content: "\f104";
+    font-family: fontAwesome;
+    color: #000;
+}
+.editor-pick-slider .slick-next:before {
+    content: "\f105";
+    font-family: fontAwesome;
+    color: #000;
+}
+.editor-pick-slider .slick-prev, .editor-pick-slider .slick-next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.editor-pick-slider .slider-item .item{
+    position: relative;
+    overflow: hidden;
+}
+.editor-pick-slider .slider-item .item:hover .caption{
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.editor-pick-slider .slider-item .item .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: .35s all ease-in-out;
+    -o-transition: .35s all ease-in-out;
+    transition: .35s all ease-in-out;
+}
+.editor-pick-slider .slider-item .item .country {
+    font-size: 15px;
+    color: #bbb;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+/* ============================================
+             4.End Editor's pick area CSS
+===============================================*/
+
+
+/* ============================================
+             5.Start  mountain area CSS
+===============================================*/
+.mountain-area{
+    background: url("images/mountain-bg.jpg") no-repeat fixed;
+    background-size: cover;
+}
+.mountain-area .top-shade{
+    background: none;
+    /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(34, 34, 34,0)), to(rgba(34, 34, 34,1)));
+    background: -webkit-linear-gradient(bottom, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: -o-linear-gradient(bottom, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: linear-gradient(to top, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+}
+.mountain-area .bottom-shade{
+    background: none;
+    /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(34, 34, 34,0)), to(rgba(34, 34, 34,1)));
+    background: -webkit-linear-gradient(top, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: -o-linear-gradient(top, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+    background: linear-gradient(to bottom, rgba(34, 34, 34,0) 40%, rgba(34, 34, 34,1));
+}
+.mountain-area .title-group .title {
+    font-size: 40px;
+}
+.mountain-item {
+    padding: 54px 0;
+    border-bottom: 1px solid #ddd;
+}
+.mountain-item:last-child {
+    border-bottom: none;
+}
+.mountain-item .title {
+    color: #fff;
+    font-size: 20px;
+}
+.mountain-item .sub-title {
+    color: #ccc;
+    font-size: 18px;
+}
+.mountain-item .desc {
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.mountain-item-content {
+    padding-right: 70px;
+}
+.mountain-item .read-more {
+    margin-top: 15px;
+}
+/* ============================================
+             5.End  mountain area CSS
+===============================================*/
+
+
+
+/* ============================================
+             6.Start  subscription area CSS
+===============================================*/
+.subscription-area {
+    padding-bottom: 150px;
+}
+.subscription-area hr {
+    background: #fff;
+    width: 86%;
+    margin-top: 0;
+    margin-bottom: 85px;
+}
+.subscription-area .title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 90px;
+}
+.subscription-area .map-bg{
+    background: url("images/map.png") no-repeat center;
+    background-size: contain;
+}
+.subscription-area .form-control {
+    margin-top: 8px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border: 0;
+    height: 42px;
+    width: 400px;
+}
+/* ============================================
+             6.End  subscription area CSS
+===============================================*/
+
+
+
+/* ============================================
+             7.Start  footer area CSS
+===============================================*/
+.footer-area {
+    background: #ffe251;
+    padding: 40px 5%;
+}
+.footer-area .logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+.footer-area .social-links {
+    list-style-type: none;
+    margin: 0;
+}
+.footer-area .social-links li {
+    display: inline-block;
+}
+.footer-area .social-links li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+}
+/* ============================================
+             7.End  footer area CSS
+===============================================*/
+/* ==== content area css ==== */

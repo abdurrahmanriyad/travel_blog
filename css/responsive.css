@@ -1,0 +1,226 @@
+/* Mobile Layout: 1199px. */
+@media only screen and (max-width: 1199px) {
+    .featured-item {
+        padding: 0 0px;
+    }
+}
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-pad {
+        padding: 60px 0;
+    }
+}
+
+
+/* Medium Layout: 992px. */
+@media only screen and (max-width: 992px){
+    .site-intro-container.align-items-center {
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
+    }
+    .site-intro {
+        margin-top: 16px;
+    }
+    .site-intro .title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .header-slider .slider-item {
+        position: relative;
+        min-height: 51vh;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-pad {
+        padding: 40px 0;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .logo-area .logo {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 19px;
+    }
+    .section-pad {
+        padding: 30px 0;
+    }
+    .menu-bars{
+        display: block;
+        text-decoration: none;
+        color: #000;
+        font-size: 28px;
+        position: absolute;
+        top: -55px;
+        left: 21px;
+    }
+    .menu-bars:hover{
+        color: #000;
+    }
+    .side_menu {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all .35s linear;
+        -o-transition: all .35s linear;
+        transition: all .35s linear;
+    }
+    .side_menu.hide {
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transition: all .35s linear;
+        -o-transition: all .35s linear;
+        transition: all .35s linear;
+    }
+    .top-bar-area .links {
+        list-style-type: none;
+        padding-right: 20px;
+        text-align: right;
+    }
+    .top-bar-area .links li {
+        display: block;
+    }
+    .side_menu ul li a {
+        margin-bottom: 22px;
+        font-weight: normal;
+    }
+    .top-bar-area .links li:first-child a {
+        padding-right: 0;
+        margin-right: 25px;
+        border-right: 0;
+    }
+    .side_menu ul {
+        padding-left: 16px;
+    }
+    .site-intro {
+        display: none;
+    }
+    .side_menu ul li.active::after {
+        display: none;
+    }
+    .featured-area .text-right {
+        text-align: center !important;
+    }
+    .featured-area .view-all {
+        margin-top: 15px;
+    }
+    .featured-area .view-all::before{
+        display: none;
+    }
+    .featured-item {
+        margin-bottom: 30px;
+    }
+    .featured-content {
+        padding: 76px 0px 0 3px;
+    }
+    .about-content {
+        padding: 1px;
+        text-align: center;
+    }
+    .editor-pick-content {
+        margin-top: 63px;
+    }
+    .editor-pick-slider .slider-item {
+        padding: 0;
+        outline: 0;
+    }
+    .mountain-item {
+        padding: 0;
+    }
+    .mountain-item img {
+        display: none;
+    }
+    .mountain-item {
+        padding: 25px 0;
+    }
+    .mountain-item .mt-5{
+        margin-top: 0;
+    }
+    .subscription-area {
+        padding-bottom: 50px;
+    }
+    .section-pad-big {
+        padding: 40px 0;
+    }
+    .subscription-area .title {
+        font-size: 16px;
+        margin-bottom: 47px;
+    }
+    .subscription-area button {
+        margin-top: 18px;
+    }
+    .editor-pick-area .text-right {
+        text-align: center !important;
+    }
+    .editor-pick-slider img.mb{
+        margin-bottom: 0;
+    }
+    .side_menu.pt-5{
+        padding-top: 1rem !important;
+    }
+    .footer-area .social-links{
+        display: none;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .featured-area {
+        padding: 0 34px;
+    }
+    .about-area {
+        padding: 0 35px;
+    }
+    .editor-pick-area {
+        padding: 0 35px;
+    }
+    .editor-pick-slider .slider-item {
+        display: block;
+        padding: 0 56px;
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    .side_menu{
+        background: none;
+    }
+    .featured-area {
+        padding-top: 30px;
+    }
+    .logo-area .logo {
+        margin-left: -19px;
+    }
+    .mountain-area .container {
+        padding: 0 39px;
+        text-align: center;
+    }
+    .mountain-item-content {
+        padding-right: 0;
+    }
+    .subscription-area .form-inline{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .footer-area {
+        padding: 22px 5%;
+        text-align: center !important;
+    }
+    .footer-area .social-links {
+        text-align: center;
+        padding-left: 0;
+    }
+}
